@@ -1,10 +1,9 @@
 const jwt = require("jsonwebtoken");
 
-const secret = "mysecretsdontmess";
+const secret = "fsadassignment-group6";
 const expiration = "6h";
 
 module.exports = {
-  // function for our authenticated routes
   authMiddleware: function (req, res, next) {
     // allows token to be sent via  req.query or headers
     let token = req.body.token || req.query.token || req.headers.authorization;

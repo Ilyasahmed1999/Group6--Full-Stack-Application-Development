@@ -26,7 +26,7 @@ export const loginUser = (userData) => {
 };
 
 export const createCardio = (cardioData, token) => {
-  return fetch("/api/exercise/cardio", {
+  return fetch("/api/exercise/activityLog", {
     method: "POST",
     headers: {
       'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export const createResistance = (resistanceData, token) => {
 }
 
 export const getCardioById = (cardioId, token) => {
-  return fetch(`/api/exercise/cardio/${cardioId}`, {
+  return fetch(`/api/exercise/activityLog/${cardioId}`, {
     headers: {
       'Content-Type': 'application/json',
       authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ export const getResistanceById = (resistanceId, token) => {
 }
 
 export const deleteCardio = (cardioId, token) => {
-  return fetch(`/api/exercise/cardio/${cardioId}`, {
+  return fetch(`/api/exercise/activityLog/${cardioId}`, {
     method: "DELETE",
     headers: {
       authorization: `Bearer ${token}`,
