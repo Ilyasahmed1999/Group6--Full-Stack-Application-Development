@@ -28,7 +28,7 @@ export default function Exercise() {
           </button>
         </div>
         <div>
-          <button className='resistance-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/resistance")}>
+          <button className='resistance-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/workoutPlans")}>
             <img alt="resistance" src={resistanceIcon} className="exercise-icon" />
             Workout Plan
           </button>

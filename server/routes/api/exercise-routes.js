@@ -23,9 +23,9 @@ router.route("/activityLog").post(createCardio);
 router.route("/activityLog/:id").get(getCardioById).delete(deleteCardio);
 
 
-router.route("/resistance").post(createResistance);
+router.route("/workoutPlans").post(createResistance);
 
 
-router.route("/resistance/:id").get(getResistanceById).delete(deleteResistance);
+router.route("/workoutPlans/:id").get(getResistanceById).delete(deleteResistance);
 
 module.exports = router;

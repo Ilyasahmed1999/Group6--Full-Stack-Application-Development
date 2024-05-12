@@ -26,7 +26,7 @@ function App() {
         <Route path="/history/:type/:id" element={<SingleExercise />} />
         <Route path="/exercise" element={<Exercise />} />
         <Route path="/exercise/activityLog" element={<Cardio />} />
-        <Route path="/exercise/resistance" element={<Resistance />} />
+        <Route path="/exercise/workoutPlans" element={<Resistance />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router >
