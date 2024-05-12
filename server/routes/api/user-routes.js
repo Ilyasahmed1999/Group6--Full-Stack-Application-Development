@@ -4,8 +4,7 @@ const { createUser, login, getSingleUser } = require("../../controllers/user-con
 // import middleware
 const { authMiddleware } = require("../../utils/auth");
 
-// put authMiddleware anywhere we need to send a token for verification of user
-// /api/user for user signup
+
 router.route("/").post(createUser)
 
 // /api/user/login for user login

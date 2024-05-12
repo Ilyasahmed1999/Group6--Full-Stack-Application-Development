@@ -22,13 +22,13 @@ export default function Exercise() {
       <div className="exercise d-flex flex-column align-items-center">
         <h2 className='title'>Add Activity or Workout Plan</h2>
         <div>
-          <button className='cardio-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/cardio")}>
+          <button className='cardio-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/activityLog")}>
             <img alt="cardio" src={cardioIcon} className="exercise-icon" />
             Activity
           </button>
         </div>
         <div>
-          <button className='resistance-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/resistance")}>
+          <button className='resistance-btn d-flex flex-column  align-items-center justify-content-center' onClick={() => navigate("/exercise/workoutPlans")}>
             <img alt="resistance" src={resistanceIcon} className="exercise-icon" />
             Workout Plan
           </button>
@@ -37,5 +37,3 @@ export default function Exercise() {
     </div>
   );
 }
-
-
